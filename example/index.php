@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php'; // This fiel is automatically created by Composer
+require __DIR__ . '/vendor/autoload.php'; // This field is automatically created by Composer
 require __DIR__ . '/EcwidOAuth2Provider.php';
 
 
