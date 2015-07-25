@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php'; // This fiel is automatically created by Composer
 require __DIR__ . '/EcwidOAuth2Provider.php';
 
 
@@ -12,7 +12,7 @@ require __DIR__ . '/EcwidOAuth2Provider.php';
  *   - redirectUri: Redirect URL – an URL where Ecwid sends the user after they authorizes your application
  *   - scopes: Access scopes your application is asking for
  * 
- * For the details on these paramteres, please refer to the Ecwid API documentation: http://api.ecwid.com/#authentication
+ * For the details on these paramteres, please refer to Ecwid API documentation
  */
 $provider = new Ecwid\OAuth2Client\EcwidOAuth2Provider([
     'clientId'     => 'yourclientid',
