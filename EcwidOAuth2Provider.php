@@ -5,18 +5,18 @@ use \League\OAuth2\Client\Token\AccessToken as AccessToken;
 
 class EcwidOAuth2Provider extends \League\OAuth2\Client\Provider\AbstractProvider
 {
-    public function urlAuthorize()
+    public function getBaseAuthorizationUrl()
     {
         return 'https://my.ecwid.com/api/oauth/authorize';
     }
-
-    public function urlAccessToken()
+    public function getBaseAccessTokenUrl(array $params)
     {
         return 'https://my.ecwid.com/api/oauth/token';
     }
-
-    public function urlUserDetails(AccessToken $token) {}
-    public function userDetails($response, AccessToken $token) {}    
+    public function getResourceOwnerDetailsUrl(AccessToken $token){}
+    protected function getDefaultScopes(){}
+    protected function checkResponse(\Psr\Http\Message\ResponseInterface $response, $data){}
+    protected function createResourceOwner(array $response, AccessToken $token){}
 }
 
 
