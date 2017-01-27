@@ -5,6 +5,8 @@ use \League\OAuth2\Client\Token\AccessToken as AccessToken;
 
 class EcwidOAuth2Provider extends \League\OAuth2\Client\Provider\AbstractProvider
 {
+    public $uidKey = 'store_id';
+  
     public function getBaseAuthorizationUrl()
     {
         return 'https://my.ecwid.com/api/oauth/authorize';
