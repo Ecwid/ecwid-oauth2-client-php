@@ -3,14 +3,14 @@ A simple oAuth2 client for using [Ecwid API](http://api.ecwid.com/).
 
 ## Requirements
 
-###PHP
+### PHP
 Supported versions:
 - PHP 5.5
 - PHP 5.6
 - PHP 7.0
 - HHVM
 
-###Composer
+### Composer
 Composer is used to install the dependencies: https://getcomposer.org/
 
 ## Installation
@@ -28,7 +28,7 @@ Include `EcwidOAuth2Provider.php` in your project and use the oAuth2 client as i
 See [example/index.php](https://github.com/Ecwid/ecwid-oauth2-client-php/blob/master/example/index.php)
 
 ## Ecwid API
-Ecwid API docs: http://api.ecwid.com/
+Ecwid API docs: https://developers.ecwid.com/api-documentation
 
 ## Credits
 OAuth2 client library: https://github.com/thephpleague/oauth2-client
